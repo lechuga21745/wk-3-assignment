@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        div {
+            border-style: solid;
+            border-color: rgb(121, 120, 120);
+            padding: 5px;
+            margin: 5px;
+
+        }
+    </style>
+</head>
+<h1>Black Friday Hub</h1>
+<br>
+
+
+<!--This is where I add the navbar and dropdown and put the link to the home page-->
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Black Friday Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Deals of the Day
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Deal 1</a>
+                        <a class="dropdown-item" href="#">Deal 2</a>
+                        <a class="dropdown-item" href="#">Deal 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <br>
+
+    <h1>Contact the Repair Team!</h1>
+    <br>
+    <br>
+    <!--adding a form-->
+    <form>
+        <input type="text" name="firstName" placeholder="First Name"> <br><br>
+        <input type="text" name="lastName" placeholder="Last Name"> <br><br>
+        <input type="text" name="email" placeholder="E-Mail Address"> <br><br>
+
+        <input type="button" value="Submit">
+        <br>
+        <br>
+
+    </form>
+    <!--adding a table-->
+    <table class="table table-dark table-striped table-bordered">
+        <tr>
+            <th scope="col">ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Joe</td>
+            <td>Joe@yahoo.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Russell</td>
+            <td>Russell@yahoo.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Frank</td>
+            <td>Frank@yahoo.com</td>
+        </tr>
+    </table>
+
+    <!-- adding my container and the sze at whih it will stack-->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg">
+                1013 Kroos Way, Las Vegas, NV, 89107
+            </div>
+            <div class="col-lg">
+                Phone Number:(702)444-1500
+            </div>
+            <div class="col-lg">
+                BlackFridayHub@yahoo.com
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
